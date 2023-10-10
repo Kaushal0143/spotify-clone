@@ -1,0 +1,18 @@
+#main-section{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+.section-1{
+    width: 200px;
+    height: 200px;
+}
+.section-2{
+    width: 400px;
+    height: 100vh;
+}
+.section-3{
+width: 300px;
+height: 100vh;
+grid-row-start: 1;
+grid-row-end: 3;
+}
