@@ -36,16 +36,18 @@ a{
 .main-content{
     flex: 0.8;
     background-color: var(--grey);
-    overflow-y: auto;
     border-radius: 0.5rem;
 }
 .player{
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     bottom: 0;
     background-color: var(--black);
     left: 0;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
 }
 .top-icon{
     background-color: var(--grey);
@@ -66,6 +68,60 @@ a{
     font-size: 0.8rem;
     cursor: pointer;
 }
+.library-link-flex{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer; 
+    margin: 1rem 0;
+}
+#home_tab{
+    background-color: #282828;
+    width: 100%;
+    height: 61.76px;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+#create_playlist{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#create_playlist>img{
+    width: 29.65px;
+    height: 29.65px;
+}
+#liked_songs{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
+}
+#liked_songs>img{
+    width: 10.75px;
+    height: 10.75px; 
+}
+#your_episodes{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #004638;
+}
 .link-flex img{
     height: 1.2rem;
     width: 1.2rem;
@@ -84,15 +140,239 @@ a{
     border-radius: 0.5rem;
     overflow-y: auto;
     flex: 3;
-    height: 90vh;
+    height: 90vh;  
 }
-.flex-top{
+.fav-section{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}
+.fav-section p{
+    color: #fff;
+}
+.install-app{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
-    margin-bottom: 0.5rem;
 }
-.link-flex p{
+.install-app>p{
+    margin-left: 1.5rem ;
+}
+.top-section{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-left-section{
+    display: flex;
+    margin: 1rem;
+}
+.elipse{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 5px;
+}
+.top-right-section{
+    width: 147px;
+    height: 40px;
+    border-radius: 33px;
+    background-color: #000;
+    margin-inline-end: 1rem;
+    display: flex;
+    align-items: center;
+}
+.top-right-section p{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding-left: 5px;
+}
+#caret_down{
+    margin-left: 1rem;
+}
+.middle-section{
+    margin-inline:2rem;
+    width: 95%;
+}
+.album-section{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.album-card{
+    display: flex;
+    align-items: center;
+    background-color: #303030;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+.album-card p{
+    margin-left:2rem;
+}
+.album-image-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px, 0px, 0px, 4px;
+    background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
+
+}
+.album-image-group>img{
+    width: 29px;
+    height: 29px;
+}
+.last-section{
+    margin-inline:2rem;
+}
+.last-album-card{
+    width: 251.29px;
+    height: 305.9px;
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    position: relative;
+}
+.last-album-card img{
+    width: 207.78px;
+    height: 207.93px;
+    border-radius: 14px;
+    margin-inline:auto;
+    margin-top: 10px;
+    
+}
+.last-album-card h5{
+    font-family: sans-serif;
     font-size: 1rem;
-    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 235px;
+    left: 20px;
+}
+.last-album-card p{
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 260px;
+    left: 20px;
+    color: #B3B3B3;
+}
+.last-album-section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow:scroll;
+    height:800px;
+    gap: 15px;
+}
+.player-left-section{
+    display: flex;
+    margin-left: 10px;
+}
+#cover-image{
+    width: 45px;
+    height: 60px;
+}
+.title_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.player-left-section h3{
+    margin: 0;
+}
+.player-left-section p{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-align: left;
+}
+#heart_image{
+    margin-left: 10px;
+    width: 23px;
+}
+.player-middle-section{
+    width: 560px;
+    height: 50px;
+    border-radius: 2.5px;
+    margin-inline: 400px;
+    margin:auto;
+}
+.play-menu{
+    display: flex;
+    justify-content: center;
+}
+.last-album-section::-webkit-scrollbar {
+    display: none;
+  }
+.play-slide{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: 
+}
+.play-slide p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 9px;
+    margin: auto 5px;
+    text-align: center;
+}
+.white-slide{
+    width: 511px;
+height: 5px;
+border-radius: 2.5px;
+background-color: #C4C4C4;
+}
+.dark-slide{
+    width: 511px;
+height: 5px;
+border-radius: 2.5px;
+background-color: #535353;
+}
+.player-right-section{
+    width: 270px;
+    height: 25px;
+    border-radius: 2.5px;
+    margin: auto;
+    display: flex;
+    margin-inline: 0;
+}
+.volume-slide{
+    width: 90px;
+height: 5px;
+border-radius: 2.5px;
+background-color: #C4C4C4;
+display: flexbox;
+justify-content: center;
+align-self: center;
+}
+.image5{
+    width: 15px;
+    padding-inline: 5px;
 }
